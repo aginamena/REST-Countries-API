@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries API with color theme switcher master</title>
+    <link href = "style.css" rel = "stylesheet">
+    <link href = "toggle.css" rel = "stylesheet">
+
+      <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src = "script.js" defer></script>
+  </head>
+  <body>
+    <div id = "heading" class = "container">
+      <h4>Where in the world?</h4>
+      </div>
+
+    </div>
+    <main id = "main">
+      <div class = "container" id = "inputAndFilterSection">
+        <div id = "search-box">
+          <i class="fas fa-search fa-lg" style = "margin-right:20px" id = "search-icon"></i>
+          <input type = "text" placeholder="Search by country's name" id = "input-search-box">
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Fitler by Region
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Africa</a>
+            <a class="dropdown-item" href="#">America</a>
+            <a class="dropdown-item" href="#">Asia</a>
+            <a class="dropdown-item" href="#">Europe</a>
+            <a class="dropdown-item" href="#">Oceania</a>
+          </div>
+        </div>
+      </div>
+
+      <div id = "number-of-countries-displayed" class = "container">
+      </div>
+      <div id = "list-of-countries" class = "container">
+      </div>
+
+      <div id = "clicked-country" class = "container">
+        <button style = "padding:5px 15px;background:lightgray;margin-left:5px;" id = "go-back-button">
+          <i class="fas fa-arrow-left" style="margin-right:5px;"></i>
+          Back
+        </button>
+        <div id = "clicked-country-details">
+          <!-- <img src = "" id = "clicked-country-img"> -->
+          <div id = "countryInfo"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
